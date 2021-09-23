@@ -11,7 +11,7 @@ type DataProps = {
   }
 }
 
-const UsingTypescript: React.FC<PageProps<DataProps>> = ({
+const UsingTypescript: React.FC<PageProps<GatsbyTypes.SampleNameQuery>> = ({
   data,
   path,
   location,
@@ -46,7 +46,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({
 export default UsingTypescript
 
 export const query = graphql`
-  {
+  query SampleName {
     site {
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
     }
