@@ -30,7 +30,7 @@ const UsingTypescript: React.FC<PageProps<GatsbyTypes.SampleNameQuery>> = ({
     </p>
     <p>
       You're currently on the page "{path}" which was built on{" "}
-      {data.site.buildTime}.
+      {data.site?.buildTime}.
     </p>
     <p>
       To learn more, head over to our{" "}
